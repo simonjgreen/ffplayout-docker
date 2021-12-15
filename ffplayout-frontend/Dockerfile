@@ -1,4 +1,4 @@
-FROM node:lts-alpine AS build-stage
+FROM node:14-alpine AS build-stage
 
 ENV NUXT_TELEMETRY_DISABLED=1
 ARG version=3.0.1
