@@ -1,5 +1,7 @@
 # ffplayout-docker
 
+**This repo is not much maintained, so take it more as an idea of how ffplayout can run in docker containers.**
+
 Complete playout solution with [engine](https://github.com/ffplayout/ffplayout-engine), [API](https://github.com/ffplayout/ffplayout-api), [Web GUI](https://github.com/ffplayout/ffplayout-frontend) and [srs rtmp/hls server](https://github.com/ossrs/srs).
 
 A debian like host system, with a recent docker version, is recommend.
