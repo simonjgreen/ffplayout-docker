@@ -1,6 +1,8 @@
 # ffplayout-docker
 
-**This repo is not much maintained, so take it more as an idea of how ffplayout can run in docker containers.**
+**This repo is not maintained, take it more as an idea of how ffplayout can run in docker containers.**
+
+#### Don't push the ffplayout-engine image to any public registry! The image contains a none free ffmpeg version, which is not allow to redistribute!
 
 Complete playout solution with [engine](https://github.com/ffplayout/ffplayout-engine), [API](https://github.com/ffplayout/ffplayout-api), [Web GUI](https://github.com/ffplayout/ffplayout-frontend) and [srs rtmp/hls server](https://github.com/ossrs/srs).
 
