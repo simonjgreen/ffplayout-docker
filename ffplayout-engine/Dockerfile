@@ -6,10 +6,10 @@ RUN pip install supervisor
 
 # get ffplayout engine and install all dependencies
 RUN cd /opt && \
-    wget "https://github.com/ffplayout/ffplayout-engine/archive/v${version}.zip" && \
-    unzip "v${version}.zip" && \
-    mv "ffplayout-engine-${version}" 'ffplayout-engine' && \
-    rm "v${version}.zip" && \
+    wget "https://github.com/ffplayout/ffplayout-engine/archive/${version}.zip" && \
+    unzip "${version}.zip" && \
+    mv "ffplayout-${version}" 'ffplayout-engine' && \
+    rm "${version}.zip" && \
     cd ffplayout-engine && \
     pip install --no-cache-dir -r requirements-base.txt && \
     mkdir /etc/ffplayout
@@ -35,7 +35,7 @@ RUN apk update && \
     --enable-openssl --enable-libass --enable-libfdk-aac --enable-libfreetype \
     --enable-libfribidi --enable-libmp3lame --enable-libopus --enable-libvpx \
     --enable-libsrt --enable-libx264 --enable-libx265 --enable-libzmq && \
-    make -j $(nproc | awk '{print $1 / 2}') && \
+    make && \
     make install && \
     cd .. && \
     rm -rf ffmpeg && \
